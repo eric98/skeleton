@@ -23,7 +23,29 @@ Comandes:
  $ git clone https://github.com/thephpleague/skeleton
  $ adminlte skeleton_test
  
-1)
+1) Executar prefill al paquet
+
+```bash
+cd skeleton
+php prefill.php
+```
+
+2) Restaurar git
+
+```bash
+cd skeleton
+rm -rf .git
+llum github:init
+```
+
+3) Studio
+
+```bash
+composer global require franzl/studio
+cd skeleton_test
+studio load ../skeleton
+composer require "ergare17/skeleton":"dev-master"
+```
 
 ## Structure
 
